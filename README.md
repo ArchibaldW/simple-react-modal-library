@@ -12,7 +12,7 @@ npm i simple-react-modal-library
 
 ## Props
 
-This commponents have 3 props :
+This components have 3 props :
 
 - _text_ (string) : The Text inside modal
 - _show_ (boolean) : Is the modal is shown or not
@@ -30,6 +30,11 @@ function ContainerUsingModal() {
   const [text, setText] = useState('')
   const [show, setShow] = useState(false)
 
+  function openModal() {
+    setText('This modal is visible')
+    setShow(true)
+  }
+
   function hideModal() {
     setShow(false)
     setText('')
@@ -37,8 +42,8 @@ function ContainerUsingModal() {
 
   return (
     <div>
-      <button onClick={setShow(true); setText('Cette modale est visible')}>Show the modal</button>
-      <Modal text={modal.text} show={modal.show} hideModal={hideModal} />
+      <button onClick={openModal}>Show the modal</button>
+      <Modal text={text} show={show} hideModal={hideModal} />
     </div>
   )
 }
