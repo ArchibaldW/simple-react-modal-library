@@ -22,27 +22,23 @@ _hideModal_ (function) : Trigger when button pushed (Expected to hide the modal)
 
 ## Example
 
-Usage example of modal component with react-redux
+Usage example of modal component
 
 ```js
-import './App.css'
-import Router from '../pages/router'
-import { getModal } from '../store/selectors'
-import { useSelector, useDispatch } from 'react-redux'
-import modalSlice from '../features/modal/modalSlice'
 import { Modal } from 'simple-react-modal-library'
 
-function App() {
-  const dispatch = useDispatch()
-  const modal = useSelector(getModal)
+function ContainerUsingModal() {
+  const [text, setText] = useState('')
+  const [show, setShow] = useState(false)
 
   function hideModal() {
-    dispatch(modalSlice.actions.hideModal())
+    setShow(false)
+    setText('')
   }
 
   return (
-    <div className='app'>
-      <Router />
+    <div>
+      <button onClick={setShow(true); setText('Cette modale est visible')}>Show the modal</button>
       <Modal text={modal.text} show={modal.show} hideModal={hideModal} />
     </div>
   )
