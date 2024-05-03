@@ -1,8 +1,8 @@
-#React Single Modal Library
+# React Single Modal Library
 
 This library is intended to works with React
 
-##Installation
+## Installation
 
 To install the library, use the following command :
 
@@ -10,7 +10,7 @@ To install the library, use the following command :
 npm i simple-react-modal-library
 ```
 
-##Props
+## Props
 
 This commponents have 3 props :
 
@@ -18,7 +18,7 @@ _text_ (string) : The Text inside modal
 _show_ (boolean) : Is the modal is shown or not
 _hideModal_ (function) : Trigger when button pushed (Expected to hide the modal)
 
-##Example
+## Example
 
 Usage example of modal component with react-redux
 
