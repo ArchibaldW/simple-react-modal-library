@@ -48,5 +48,5 @@ function ContainerUsingModal() {
   )
 }
 
-export default App
+export default ContainerUsingModal
 ```
