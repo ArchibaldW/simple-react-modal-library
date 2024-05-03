@@ -14,17 +14,16 @@ npm i simple-react-modal-library
 
 This commponents have 3 props :
 
-_text_ (string) : The Text inside modal
-
-_show_ (boolean) : Is the modal is shown or not
-
-_hideModal_ (function) : Trigger when button pushed (Expected to hide the modal)
+- _text_ (string) : The Text inside modal
+- _show_ (boolean) : Is the modal is shown or not
+- _hideModal_ (function) : Trigger when button pushed (Expected to hide the modal)
 
 ## Example
 
 Usage example of modal component
 
 ```js
+import { useState } from 'react'
 import { Modal } from 'simple-react-modal-library'
 
 function ContainerUsingModal() {
